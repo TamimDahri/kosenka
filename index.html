@@ -4,9 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>KOSENKA - Koperasi Seni Keratan Daging Berhad</title>
-  <meta name="description" content="">
-  <meta name="keywords" content="">
+  <title>KOSENKA - Koperasi Alumni Seni Keratan Daging Berhad</title>
+  <meta name="description" content="Expert butchers providing prime local & imported cuts, halal meals
+  equipment and training. Experience the art of butchery with our farm-to-fork services">
+  <meta name="keywords" content="halal meat, butcher, prime cuts, training, cow, korban, local beef,
+  imported beef, lamb, lamb shank, mutton, goat, chicken, poultry, turkey, picanha, wagyu, angus, ribeye, 
+  sirloin, tenderloin, t-bone, tomahawk, brisket, short ribs, oxtail, shank, fillet, striploin, rump, chuck, 
+  blade, mince, sausage, burger, patty, skewer, steak, bone marrow, kuala lumpur">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
@@ -75,6 +79,10 @@
           </li>
           <li><a href="contact.html">Contact</a></li>
         </ul>
+
+        <!-- Google Translate Dropdown -->
+        <div id="google_translate_element"></div>
+        
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
 
@@ -861,6 +869,18 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en', // Default page language
+        includedLanguages: 'ms', // 'ms' for Malay
+        layout: google.translate.TranslateElement.InlineLayout.SIMPLE
+      }, 'google_translate_element');
+    }
+  </script>
+  
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  
 
 </body>
 
