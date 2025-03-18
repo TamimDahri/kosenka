@@ -2277,6 +2277,44 @@ section,
   font-size: 13px; /* Adjust the value as needed */
 }
 
-/* .about .content .row .col-lg-12 h4 {
-  margin-bottom: 50px; /* Adjust the value as needed 
-}*/
+/* TRANSLATE */
+
+/* Ensure the navmenu uses flexbox */
+.navmenu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+/* Align language selection to the right */
+#google_translate_container {
+  margin-left: auto; /* Pushes it to the right */
+  display: flex;
+  align-items: center;
+  gap: 8px; /* Adds spacing between label and dropdown */
+}
+
+/* Style the label */
+.translate-label {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Style the dropdown */
+.goog-te-combo {
+  padding: 4px 8px;
+  font-size: 12px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  background: white;
+  cursor: pointer;
+}
+
+/* Hide Google Translate branding */
+.goog-logo-link, .goog-te-gadget span {
+  display: none !important;
+}
+
+

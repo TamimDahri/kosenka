@@ -81,7 +81,11 @@
         </ul>
 
         <!-- Google Translate Dropdown -->
-        <div id="google_translate_element"></div>
+        <div id="google_translate_container">
+          <span class="translate-label">Select Language:</span>
+          <div id="google_translate_element"></div>
+      </div>
+      
         
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -870,18 +874,18 @@
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
 
+  <!-- Google Translate -->
   <script>
     function googleTranslateElementInit() {
       new google.translate.TranslateElement({
-        pageLanguage: 'en', // Default page language
-        includedLanguages: 'ms', // 'ms' for Malay
+        pageLanguage: 'en', 
+        includedLanguages: 'ms,zh-CN,ru,ar,ja,hi', // Malay, Chinese, Russian, Arabic
         layout: google.translate.TranslateElement.InlineLayout.SIMPLE
       }, 'google_translate_element');
     }
   </script>
+  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   
-  <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>  
-
 </body>
 
 </html>
